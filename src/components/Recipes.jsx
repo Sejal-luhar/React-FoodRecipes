@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useRecipes } from "../context/RecipeContext"; // Import the context hook
 import NavBar from "./navBar";
 import Footer from "./Footer";
+import LoadingSpinner from "./LoadingBar";
 
 // Recipe Data fetching from Context
 const Recipes = () => {
@@ -24,7 +25,7 @@ const Recipes = () => {
   };
 
   if (status === "loading") {
-    return <div>Loading...</div>; // Show loading state while fetching data
+    return <div>{<LoadingSpinner />}</div>; // Show loading state while fetching data
   }
 
   if (status === "failed") {
@@ -37,9 +38,9 @@ const Recipes = () => {
       <NavBar onSearch={handleSearch} />
 
       {/* Recipes Section */}
-      <section className="bg-[#542C4B] text-white text-center py-16 px-4">
-        <p className="text-sm mb-4 opacity-80">PINCH OF YUM &gt; RECIPES</p>
-        <h2 className="text-4xl text-orange-500 font-bold mb-6">Recipes</h2>
+      <section className="bg-gradient-to-br from-[#542C4B] to-[#3f1736] text-white text-center py-16 px-4">
+        <p className="text-sm mb-4  opacity-80">PINCH OF YUM &gt; RECIPES</p>
+        <h1 className="text-5xl text-orange-500 font-bold mb-4">Discover Delicious Recipes</h1>
         <p className="max-w-xl mx-auto text-base mb-8">
           We’ve organized these recipes every way we could think of so you don't have to! Dietary
           restrictions, weeknight dinners, meal prep recipes, some of our most tried-and-true... no
@@ -48,39 +49,43 @@ const Recipes = () => {
         <div className="flex justify-center">
           <input
             type="text"
-            placeholder="Search by keyword"
+            placeholder="Search by keyword . . ."
             value={searchTerm}
             onChange={handleSearch}
-            className="w-full max-w-md px-4 py-2 text-gray-700 rounded focus:outline-none"
+            className="w-full max-w-md px-4 py-3 text-gray-800 rounded-3xl shadow shadow-gray-200 focus:outline-none"
           />
         </div>
       </section>
 
       {/* Recipes Grid */}
       <section className="py-16 px-20 text-center">
-        <h3 className="text-xl font-bold mb-4 text-[#542C4B]">TOP RATED RECIPES</h3>
+        <h3 className="text-xl font-bold mb-4 text-orange-500">TOP RATED RECIPES</h3>
         <p className="text-gray-700 max-w-2xl mx-auto mb-8">
           Out of all the many recipes on Pinch of Yum, these are our shining stars - the best of the best!
         </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {filteredRecipes.map((recipe) => (
             <div
               key={recipe.idMeal}
-              className="text-left cursor-pointer"
-              onClick={() => handleRecipeClick(recipe)} // Trigger the recipe click
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 cursor-pointer"
+              onClick={() => handleRecipeClick(recipe)}
             >
               <img
                 src={recipe.strMealThumb}
                 alt={recipe.strMeal}
-                className="w-full h-40 object-cover rounded-md mb-4"
+                className="w-full h-40 object-cover"
               />
-              <h4 className="text-md font-bold text-[#542C4B]">{recipe.strMeal}</h4>
-              <div className="flex items-center text-yellow-500">
-                {"★".repeat(Math.floor(4.6))}{" "}
-                <span className="text-gray-500 ml-2">
-                  1,797 REVIEWS / 4.6 AVERAGE
-                </span>
+              <div className="p-4 text-yellow-500  ">
+              {"★".repeat(Math.floor(4.6))}{" "}
+                <h3 className="text-lg font-bold text-[#542C4B] mb-2">
+                  {recipe.strMeal}
+                </h3>
+                <div className="items-center text-sm">
+                  
+                  <span className="block text-gray-500 ml-2">
+                    1,797 REVIEWS / 4.6 AVERAGE
+                  </span>
+                </div>
               </div>
             </div>
           ))}
@@ -114,14 +119,14 @@ const Recipes = () => {
         </div>
       )}
          <section className="py-8 px-4 text-center">
-        <h3 className="text-2xl font-bold text-[#542C4B] mb-8">Browse Recipes</h3>
+        <h3 className="text-2xl font-bold text-orange-400 mb-8">Browse Recipes</h3>
 
         <div className="px-44">
           {/* Recipes By Course */}
           <div >
             <h4 className="text-lg text-left font-bold  text-[#542C4B] mb-4">RECIPES BY COURSE</h4>
             <hr />
-            <ul className="text-gray-700 my-6 space-y-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <ul className="text-gray-700  my-6 space-y-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <li>• Appetizer</li>
               <li>• Soups</li>
               <li>• Salads</li>

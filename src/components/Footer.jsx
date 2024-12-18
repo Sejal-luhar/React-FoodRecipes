@@ -56,7 +56,7 @@ const Footer = () => {
             Get a Free eCookbook with our top 25 recipes.
           </p>
           <form onSubmit={handleSubmit}>
-            <div className="flex items-center border-2 rounded-md border-[#542C4B]">
+            <div className="flex items-center border-2 rounded-3xl overflow-hidden border-[#542C4B]">
               <input
                 type="text"
                 placeholder="First Name"
