@@ -60,7 +60,7 @@ function HomePage() {
     
     <NavBar onSearch={handleSearch} />
       {/* Hero Section */}
-      <div className="relative h-[90vh] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')" }}>
+      <div className="relative h-[90vh]  bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')" }}>
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-70"></div>
         <div className="relative flex flex-col items-center justify-center h-full text-center text-white px-6">
           <h1 className="text-5xl font-extrabold mb-4  leading-tight">
