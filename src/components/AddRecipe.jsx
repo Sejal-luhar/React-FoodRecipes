@@ -28,7 +28,7 @@ function AddRecipe() {
 
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-300 flex items-center justify-center">
         <div className="max-w-md w-full p-6 bg-white shadow-lg rounded-lg">
           <h1 className="text-3xl font-bold italic font-serif text-center text-orange-500 mb-4">
@@ -101,7 +101,7 @@ function AddRecipe() {
           </form>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
