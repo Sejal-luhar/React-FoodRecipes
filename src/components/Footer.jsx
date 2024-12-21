@@ -56,20 +56,20 @@ const Footer = () => {
             Get a Free eCookbook with our top 25 recipes.
           </p>
           <form onSubmit={handleSubmit}>
-            <div className="flex items-center border-2 rounded-3xl overflow-hidden border-[#542C4B]">
+            <div className="flex items-center rounded-3xl overflow-hidden shadow-md shadow-gray-500">
               <input
                 type="text"
                 placeholder="First Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="p-2 border rounded-l w-1/2"
+                className="p-2 outline-none  w-1/2"
               />
               <input
                 type="email"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="p-2 border-t border-b w-1/2"
+                className="p-2 outline-none w-1/2"
               />
               <button type="submit" className="bg-[#542C4B] text-white p-2 rounded-r">
                 GO

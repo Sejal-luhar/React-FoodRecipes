@@ -121,48 +121,69 @@ const Recipes = () => {
          <section className="py-8 px-4 text-center">
         <h3 className="text-2xl font-bold text-orange-400 mb-8">Browse Recipes</h3>
 
-        <div className="px-44">
+        <div className="px-64">
           {/* Recipes By Course */}
           <div >
             <h4 className="text-lg text-left font-bold  text-[#542C4B] mb-4">RECIPES BY COURSE</h4>
             <hr />
-            <ul className="text-gray-700  my-6 space-y-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="flex justify-between">
+            <ul className="text-gray-700 text-left   my-6 space-y-7 sm:grid-cols-3 gap-4">
               <li>• Appetizer</li>
               <li>• Soups</li>
               <li>• Salads</li>
-              <li>• Sides</li>
+             </ul>
+             <ul className="text-gray-700 text-left   my-6 space-y-7  sm:grid-cols-3 gap-4">
+             <li>• Sides</li>
               <li>• Desserts</li>
               <li>• Snacks</li>
-              <li>• Baking</li>
+             </ul> <ul className="text-gray-700 text-left   my-6 space-y-7  sm:grid-cols-3 gap-4">
+             <li>• Baking</li>
               <li>• Sandwiches</li>
               <li>• Main Dishes</li>
-            </ul>
+             </ul>
+             </div>
           </div>
 
           {/* Recipes By Diet */}
           <div>
             <h4 className="text-lg text-left font-bold text-[#542C4B] mb-4">RECIPES BY DIET</h4>
             <hr />
-            <ul className="text-gray-700 my-6 space-y-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="flex justify-between">
+            <ul className="text-gray-700 text-left my-6 space-y-7  sm:grid-cols-3 gap-4">
               <li>• Dairy-Free</li>
               <li>• Gluten-Free</li>
-              <li>• Healthy</li>
+              
+            </ul>
+            <ul className="text-gray-700 text-left my-6 space-y-7  sm:grid-cols-3 gap-4">
+              
+            <li>• Healthy</li>
               <li>• Sugar-Free</li>
-              <li>• Vegan</li>
+              
+            </ul> <ul className="text-gray-700 text-left my-6 pr-2 space-y-7  sm:grid-cols-3 gap-4">
+             
+            <li>• Vegan</li>
               <li>• Vegetarian</li>
             </ul>
+            </div>
           </div>
 
           {/* Recipes By Season */}
           <div>
             <h4 className="text-lg font-bold text-left text-[#542C4B] mb-4">RECIPES BY SEASON</h4>
             <hr />
-            <ul className="text-gray-700 my-6 space-y-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="flex justify-between">
+            <ul className="text-gray-700 text-left my-6 space-y-7 sm:grid-cols-3 gap-4">
               <li>• Spring</li>
               <li>• Summer</li>
-              <li>• Fall</li>
-              <li>• Winter</li>
             </ul>
+            <ul className="text-gray-700 text-left pr-5 my-6 sm:grid-cols-3 gap-4">
+            <li>• Fall</li>
+            </ul>
+            <ul className="text-gray-700 text-left pr-9 my-6  sm:grid-cols-3 gap-4">
+             
+            <li>• Winter</li>
+            </ul>
+            </div>
           </div>
         </div>
       </section>

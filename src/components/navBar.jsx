@@ -108,7 +108,7 @@ function NavBar({ onSearch }) {
         </ul>
 
         {/* Right Search Bar */}
-        <div className="flex items-center border border-gray-300 rounded-3xl overflow-hidden shadow-sm shadow-gray-200">
+        <div className="flex items-center  rounded-3xl overflow-hidden shadow shadow-gray-400">
           <input
             type="text"
             placeholder="Search recipes..."

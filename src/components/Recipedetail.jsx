@@ -83,12 +83,12 @@ function RecipeDetail() {
             />
           </div>
 
-          <div className="md:w-1/2 p-8 flex flex-col justify-between">
+          <div className="md:w-1/2 p-8 py-5 flex flex-col justify-between">
             <div>
-              <h3 className="text-4xl font-extrabold text-gray-800 mb-6">
+              <h3 className="text-3xl font-bold text-gray-800 mb-3">
                 {recipe.strMeal}
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-sm  leading-snug">
                 {recipe.strInstructions}
               </p>
             </div>
