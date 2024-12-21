@@ -22,8 +22,40 @@ function HomePage() {
   };
 
   const categories = [
-    // Your categories array remains unchanged...
+    {
+      name: "Quick and Easy",
+      image: "https://plus.unsplash.com/premium_photo-1669687759526-750edcfb6cae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cXVpY2slMjBhbmQlMjBlYXN5JTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+    },
+    {
+      name: "Dinner",
+      image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RGlubmVyJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+    },
+    {
+      name: "Vegetarian",
+      image: "https://plus.unsplash.com/premium_photo-1694860348839-4d0ba30c7bc6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Healthy",
+      image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Instant Pot",
+      image: "https://plus.unsplash.com/premium_photo-1671485194462-38008d29471f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGluc3RhbnQlMjBwb3QlMjBmb29kfGVufDB8fDB8fHww",
+    },
+    {
+      name: "Vegan",
+      image: "https://plus.unsplash.com/premium_photo-1698867577020-38ae235fd612?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVnYW4lMjBmb29kfGVufDB8fDB8fHww",
+    },
+    {
+      name: "Meal Prep",
+      image: "https://plus.unsplash.com/premium_photo-1700061780538-79192a193d2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TWVhbCUyMFByZXB8ZW58MHx8MHx8fDA%3D",
+    },
+    {
+      name: "Soups",
+      image: "https://plus.unsplash.com/premium_photo-1669559809615-b08af364b738?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNvdXBzfGVufDB8fDB8fHww",
+    },
   ];
+  
 
   return (
     <>
